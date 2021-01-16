@@ -1,6 +1,6 @@
 html{
 	background-color:#000;
-    border: 15px ridge white;
+        border: 2vw ridge white;
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -11,7 +11,7 @@ html{
 
 header{
 	background-color:#000;
-	border: 9px ridge white;
+	border: 2vw ridge white;
 	color:#fff;
 	font-family: Palatino, fantasy;
 	font-size: 2vw;
@@ -23,14 +23,14 @@ nav{
 	width: 30vw;
 	background-color:#000;
 	color:#fff;
-	font-size: 40px;
+	font-size: 10vw;
 	text-align: center;
-	padding-top: 30px;
-	padding: 10px;
+	padding-top: 2vw;
+	padding: 2vw;
 	margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
 }
 
 .fa-med {
@@ -62,9 +62,9 @@ body{
 
 .grid-major {
   background-color: black;
-  border: 12px groove white;
-  padding-top: 10px;
-  padding-bottom: 40px;
+  border: 2vw groove white;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   font-size: 2vw;
   text-align: center;
 }
@@ -74,9 +74,9 @@ body{
 
 .grid-minor {
   background-color: black;
-  border: 6px outset white;
-  padding-top: 10px;
-  padding-bottom: 35px;
+  border: 2vw outset white;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   font-size: 2vw;
   text-align: center;
 }
@@ -110,10 +110,10 @@ body{
 
 .grid-blank {
   background-color: black;
-  border: 1px solid black;
+  border: 1vw solid black;
   color: white;
-  padding-top: 8px;
-  font-size: 30px;
+  padding-top: 2vw;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -121,8 +121,8 @@ footer{
 	background-color:#000;
 	color:#fff;
 	font-family: Chalkduster, fantasy;
-	font-size: 15px;
+	font-size: 2vw;
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 22px;
+	padding-top: 3vw;
+	padding-bottom: 4vw;
 }
