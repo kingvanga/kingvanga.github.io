@@ -23,10 +23,9 @@ nav{
 	width: 30vw;
 	background-color:#000;
 	color:#fff;
-	font-size: 10vw;
+	font-size: 2vw;
 	text-align: center;
 	padding-top: 2vw;
-	padding: 2vw;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
