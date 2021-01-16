@@ -1,0 +1,126 @@
+html{
+	background-color:#000;
+    border: 15px ridge white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+
+}
+
+header{
+	background-color:#000;
+	border: 9px ridge white;
+	color:#fff;
+	font-family: Palatino, fantasy;
+	font-size: 2vw;
+	text-align: center;
+	padding: 1vw;
+}
+
+nav{
+	width: 30vw;
+	background-color:#000;
+	color:#fff;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 30px;
+	padding: 10px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.fa-med {
+	color:#fff;
+	text-decoration: none;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	margin-right: 0%;
+	text-align: center;
+}
+
+body{
+	background-color:#000;
+	color:#fff;
+	font-family: Palatino, fantasy;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
+   grid-template-rows:   4% 11% 11% 11% 8% 11% 11% 11% 8% 11%;
+  /* grid-template-rows: 2% 15% 20% 15% 10% 15% 20% 15% 10% 15%; */
+  background-color: #000;
+  justify-content: center;
+}
+
+.grid-major {
+  background-color: black;
+  border: 12px groove white;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 2vw;
+  text-align: center;
+}
+.grid-major:hover {
+    background-color: white;
+}
+
+.grid-minor {
+  background-color: black;
+  border: 6px outset white;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.grid-sidearrows {
+  font-size: 20px;
+  padding-top: 25px;
+  background-color: black;
+  padding-bottom: 35px;
+  text-align: center;
+  transform: rotate(90deg);
+}
+
+.grid-diagonalarrows {
+  font-size: 20px;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.grid-downarrows {
+  font-size: 20px;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.grid-blank {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding-top: 8px;
+  font-size: 30px;
+  text-align: center;
+}
+
+footer{
+	background-color:#000;
+	color:#fff;
+	font-family: Chalkduster, fantasy;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 22px;
+}
