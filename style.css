@@ -1,0 +1,113 @@
+html{
+	background-color:#000;
+    border: 1vw ridge white;
+	position: inherit;
+	left: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 98%;
+	height: 96.7%;
+	
+}
+
+header{
+	background-color:#000;
+	border: 1vw ridge white;
+	color:#fff;
+	font-family: Palatino, fantasy;
+	font-size: 2vw;
+	text-align: center;
+	padding: 1vw;
+	margin-bottom: 1vw;
+}
+
+nav{
+	border-top: .5vw groove white;
+    border-bottom: .5vw groove white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+	background-color:#000;
+	color:#fff;
+	width: 27vw;
+	font-size: 2vw;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	margin-bottom: 1.25vw;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+.fa-med {
+	color:#fff;
+	text-decoration: none;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	margin-right: 0%;
+	text-align: center;
+}
+
+body{
+	background-color:#000;
+	color:#fff;
+	font-family: Palatino, fantasy;
+	font-size: 2vw;
+	padding: 0vw;
+	text-align: center;
+	overflow: hidden;
+	
+}
+
+body.noscroll{
+    position:fixed;
+    overflow:hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
+  grid-template-rows: 4% 11% 4% 11% 9% 11% 4% 11% 4% 11%;
+  background-color: #000;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.grid-container.noscroll{
+    position:fixed;
+    overflow:hidden;
+}
+
+.grid-major {
+  background-color: black;
+  border-top: .5vw groove white;
+  border-bottom: .5vw groove white;
+  padding-top: 1vw;
+  padding-bottom: 2.5vw;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.grid-minor {
+  background-color: black;
+  border: .5vw outset white;
+  padding-top: 1vw;
+  padding-bottom: 2.5vw;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.grid-minor:hover {
+    background-color: #fff;
+    font-size: 2vw;
+    color: #000;
+}
+
+.grid-blank {
+  background-color: black;
+  border: 1vw solid black;
+}
+
