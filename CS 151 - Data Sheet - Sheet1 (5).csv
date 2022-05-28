@@ -1,0 +1,118 @@
+Course,Title,Units,Offered,Hrs Per Wk
+MS&E 220,Probabilistic Analysis,4,A,12.5
+CS 144,Introduction to Computer Networking,4,A,17.5
+CS 145,Introduction to Databses,4,A,12.5
+CS 148,Introduction to Computer Graphics and Imaging,4,A,7.5
+CS 154,Introduction to the Theory of Computation,4,A,12.5
+CS 157,Computational Logic,3,A,7.5
+CS 242,Programming Languages,3,A,12.5
+CS 244B,Distributed Systems,3,A,7.5
+CS 147,Introduction to Human-Computer Interaction Design,4,A,17.5
+CS 224N,Natural Language Processing,4,A,17.5
+CS 224W,Social and Information Networks,4,A,12.5
+CS 229,Machine Learning,4,A,22.5
+CS 229M,Machine Learning Theory,3,A,12.5
+CS 236,Deep Generative Models,3,A,12.5
+CS 237A,Principles of Robot Autonomy I,4,A,17.5
+CS 251,Cryptocurrencies and blockchain technologies,3,A,12.5
+CS 279,Computational Biology: Structure and Organization of Biomolecules and Cells,3,A,7.5
+CS 348I,Computer Graphics in the Era of AI,4,A,12.5
+COMM 166,Virtual People,5,A,7.5
+MS&E 193,"Technology and National Security: Past, Present, and Future",3,A,7.5
+POLISCI 150A,Data Science for Politics,5,A,10
+CS 238,Decision Making Under Uncertainty,4,A,12.5
+CS 224V,Conversational Virtual Assistants with Deep Learning,4,A,12.5
+CS 271,Artificial Intelligence in Healthcare,4,A,12.5
+CS 274,Representations and Algorithms for Computational Molecular Biology,4,A,12.5
+CS 325B,Data for Sustainable Development,5,A,17.5
+CS 326,Topics in Advanced Robotic Manipulation,4,A,7.5
+CS 330,Deep Multi-task and Meta Learning,3,A,12.5
+CS 336,Computational Social Choice,3,A,15
+CS 395,Independent Database Project,6,A,7.5
+CS 428B,Probabilistic Models of Cognition: Language,3,A,7.5
+EE 263,Introduction to Linear Dynamical Systems,3,A,17.5
+EE 278,Introduction to Statistical Signal Processing,3,A,17.5
+EE 377,Information Theory and Statistics,3,A,12.5
+ENGR 205,Introduction to Control Design Techniques,3,A,12.5
+STATS 202,Data Mining and Analysis,3,A,12.5
+CS 109,Introduction to Probability for Computer Scientists,5,"A,S",17.5
+STATS 116,Theory of Probability,5,"A,S",12.5
+EE 178,Probabilistic Systems Analysis,4,"A,S",12.5
+CS 221,Artificial Intelligence: Principles and Techniques,4,"A,S",17.5
+CS 230,Deep Learning,4,"A,S",12.5
+CS 161,Design and Analysis of Algorithms,5,"A,W",12.5
+CS 107E,Computer Systems from the Ground Up,5,"A,W",22.5
+CS 107,Computer Organization and Systems,5,"A,W,S",22.5
+CS 103,Mathematical Foundations of Computing,5,"A,W,S",17.5
+CME 106,Introduction to Probability and Statistics for Engineers (ENGR 155C),4,W,12.5
+CS 140,Operating Systems and Systems Programming,5,W,32.5
+CS 140E,Operating Systems Design and Implementation,4,W,17.5
+CS 190,Software Design Studio,4,W,22.5
+CS 248,Interactive Computer Graphics,4,W,12.5
+CS 254,Computational Complexity,3,W,7.5
+CS 265,Randomized Algorithms and Probabilistic Analysis (CME 309),3,W,12.5
+EE 364A,Convex Optimization I,3,W,17.5
+PHIL 251,Metalogic,4,W,12.5
+CS 149,Parallel Computing,4,W,17.5
+CS 295,Software Engineering,3,W,10
+EE 180,Digital Systems Architecture,4,W,17.5
+CS 223A,Introduction to Robotics,3,W,12.5
+CS 228,Probabilistic Graphical Models: Principles and Techniques,4,W,17.5
+CS 231A,Computer Vision: From 3D Reconstruction to Recognition,4,W,17.5
+CS 234,Reinforcement Learning,3,W,12.5
+CS 245,Principles of Data-Intensive Systems,4,W,7.5
+CS 246,Mining Massive Data Sets,4,W,17.5
+CS 255,Introduction to Cryptography,3,W,12.5
+CS 348C,Computer Graphics: Animation and Simulation,3,W,12.5
+CS 356,Topics in Computer and Network Security,3,W,12.5
+AMSTUD 145,Silicon Valley,5,W,7.5
+COMM 124,"Truth, Trust, and Tech",5,W,7.5
+COMM 230A,Digital Civil Society,3,W,7.5
+CS 152,Trust and Safety Engineering,3,W,7.5
+CS 182,"Ethics, Public Policy, and Technological Change",5,W,12.5
+DESINST 240,Designing Machine Learning: A Multidisciplinary Approach,3,W,7.5
+ENGR 248,Principled Entrepreneurial Decisions,3,W,7.5
+MS&E 234,Data Privacy and Ethics,3,W,7.5
+PSYCH 215,"Mind, Culture, and Society",3,W,7.5
+CS 237B,Principles of Robot Autonomy II,4,W,22.5
+CS 205L,Continuous Mathematical Methods with an Emphasis on Machine Learning,3,W,12.5
+CS 239,Advanced Topics in Sequential Decision Making,4,W,10
+CS 270,"Modeling Biomedical Systems: Ontology, Terminology, Problem Solving",3,W,7.5
+CS 275,Translational Bioinformatics,4,W,7.5
+CS 333,Algorithms for Interactive Robots,4,W,7.5
+CS 371,Computational Biology in Four Dimensions,3,W,7.5
+CS 432,Computer Vision For Education and Social Science Research,3,W,7.5
+EE 276,Information Theory,3,W,12.5
+PSYCH 209,Neural Network Models of Cognition: Principles and Applications,4,W,12.5
+STATS 315A,Modern Applied Statistics: Learning,3,W,12.5
+CS 111,Operating Systems Principles,5,S,17.5
+CS 143,Compilers,4,S,22.5
+CS 151,Logic Programming,3,S,7.5
+CS 210B,Software Project Experience with Corporate Partners,4,S,12.5
+CS 227B,General Game Playing,3,S,7.5
+CS 231N,Deep Learning for Computer Vision,4,S,17.5
+CS 243,Program Analysis and Optimizations,4,S,12.5
+CS 168,The Modern Algorithmic Toolbox,4,S,12.5
+CS 261,Optimization and Algorithmic Paradigms,3,S,15
+EE 364B,Convex Optimization II,3,S,12.5
+CS 244,Advanced Topics in Networking,4,S,12.5
+EE 282,Computer Systems Architecture,3,S,12.5
+CS 155,Computer and Network Security,3,S,12.5
+CS 224U,Natural Language Understanding,4,S,7.5
+CS 348B,Computer Graphics: Image Synthesis Techniques,4,S,12.5
+CS 348E,"Character Animation: Modeling, Simulation, and Control of Human Motion",3,S,10
+CS 348K,Visual Computing Systems,4,S,12.5
+CS 355,Advanced Topics in Cryptography,3,S,17.5
+COMM 186W,"Media, Technology and the Body",5,S,7.5
+CS 329T,Trustworthy Machine Learning,3,S,17.5
+DESINST 215,The Design of Data,4,S,12.5
+HISTORY 244F,Innovations in Inclusive Design in Tech,5,S,7.5
+MS&E 254,The Ethical Analyst,3,S,7.5
+PUBLPOL 103F,Ethics of Truth in a Post-Truth World,3,S,7.5
+CS 225A,Experimental Robotics,3,S,12.5
+CS 233,Geometric and Topological Data Analysis,3,S,12.5
+CS 235,Computational Methods for Biomedical Image Analysis and Interpretation,4,S,12.5
+CS 368,Algorithmic Techniques for Big Data,3,S,12.5
+CS 398,Computational Education,4,S,7.5
+ENGR 209A,Analysis and Control of Nonlinear Systems,3,S,12.5
+STATS 315B,Modern Applied Statistics: Data Mining,3,S,7.5
