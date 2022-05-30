@@ -1,0 +1,2381 @@
+
+<html>
+
+<!--=======================================================================-->
+
+<head>
+    <script type='text/javascript' src='http://epilog.stanford.edu/javascript/epilog.js'></script>
+    <script type='text/javascript' src='http://minimal.stanford.edu/worksheets/javascript/worksheets.js'></script>
+</head>
+
+<style>
+  body {
+    background-color: #e6e6fa;
+  }
+</style>
+<!--=======================================================================-->
+
+<body id='page' onload='initialize()'>
+  <center>
+
+<!--=======================================================================-->
+
+<center>
+  <p style="background-color:#d6f1ff;border:3px;border-style:solid;border-color:black;padding-bottom:1em;color:black;font-size:18px;padding-top:1em;font-weight:bold;">The Ultimate Academic Planner (Stanford MSCS AI)
+  </p>
+</center>
+
+<table cellspacing='0' border='1'>
+  <center> 
+    <p style="background-color:#d6f1ff;border:3px;border-radius:25px;border-style:solid;border-color:black;padding-top:1em;padding-bottom:1em;colorblack;font-size:16px;font-weight:bold;max-width:30%">Academic Year (2021-2022)
+    </p>
+  </center>
+  <tr>
+    <th colspan = "3" style='background-color:#d6f1ff;padding-top:.5em;padding-bottom:.5em;'>Fall</th>
+    <th style='background-color:#000000;padding-right:10px;padding-top:5px;padding-bottom:5px'></th>
+    <th colspan = "3" style='background-color:#d6f1ff;'>Winter</th>
+    <th style='background-color:#000000;padding-right:10px;padding-top:5px;padding-bottom:5px'></th>
+    <th colspan = "3" style='background-color:#d6f1ff;'>Spring</th>
+  </tr>
+  <tr>
+    <td colspan = "3" style='background-color:#d6f1ff;text-align:center'>
+      CA/RA-ship: 
+      <input type='checkbox' id='ca25(f,y22)' onclick='modcheck(this)'>
+      <label for='ca25(f,y22)'>25%</label>
+      <input type='checkbox' id='ca50(f,y22)' onclick='modcheck(this)'>
+      <label for='ca50(f,y22)'>50%</label>
+    </td>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <td colspan = "3" style='background-color:#d6f1ff;text-align:center'>
+      CA/RA-ship: 
+      <input type='checkbox' id='ca25(w,y22)' onclick='modcheck(this)'>
+      <label for='ca25(w,y22)'>25%</label>
+      <input type='checkbox' id='ca50(w,y22)' onclick='modcheck(this)'>
+      <label for='ca50(w,y22)'>50%</label>
+    </td>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <td colspan = "3" style='background-color:#d6f1ff;text-align:center'>
+      CA/RA-ship: 
+      <input type='checkbox' id='ca25(s,y22)' onclick='modcheck(this)'>
+      <label for='ca25(s,y22)'>25%</label>
+      <input type='checkbox' id='ca50(s,y22)' onclick='modcheck(this)'>
+      <label for='ca50(s,y22)'>50%</label>
+    </td>
+  </tr>
+  <tr>
+    <th style='background-color:#d6f1ff;padding:5px;width:20%'>Course</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Units</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Hrs/Wk</th>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <th style='background-color:#d6f1ff;padding:5px;width:20%'>Course</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Units</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Hrs/Wk</th>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <th style='background-color:#d6f1ff;padding:5px;width:20%'>Course</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Units</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Hrs/Wk</th>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y22,1)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y22,1)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y22,1)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td rowspan = "7" style='background-color:#000000;padding-right:10px'></td>
+    <td>
+      <select id='course(w,y22,1)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y22,1)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y22,1)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td rowspan = "7" style='background-color:#000000;padding-right:10px'></td>
+    <td>
+      <select id='course(s,y22,1)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y22,1)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y22,1)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y22,2)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y22,2)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y22,2)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y22,2)' style='width:100%' padding=2px onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y22,2)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y22,2)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y22,2)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y22,2)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y22,2)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y22,3)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y22,3)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y22,3)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y22,3)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y22,3)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y22,3)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y22,3)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y22,3)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y22,3)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y22,4)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y22,4)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y22,4)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y22,4)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y22,4)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y22,4)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y22,4)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y22,4)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y22,4)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y22,5)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y22,5)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y22,5)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y22,5)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y22,5)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y22,5)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y22,5)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y22,5)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y22,5)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr style='border-top:2px solid black'>
+    <th style='background-color:#d6f1ff;text-align:right;padding-right:10px;border-top:2px solid black'>Total</th>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalunits(f,y22)' style='max-width:30px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalhours(f,y22)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <th style='background-color:#d6f1ff;text-align:right;padding-right:10px;border-top:2px solid black'>Total</th>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalunits(w,y22)' style='max-width:30px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalhours(w,y22)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <th style='background-color:#d6f1ff;text-align:right;padding-right:10px;border-top:2px solid black'>Total</th>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalunits(s,y22)' style='max-width:30px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalhours(s,y22)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+</table>
+
+<table cellspacing='0' border='1'>
+  <center>
+    <p style="background-color:#d6f1ff;border:3px;border-radius:25px;border-style:solid;border-color:black;padding-top:1em;padding-bottom:1em;color:black;font-size:16px;font-weight:bold;max-width:30%;">Academic Year (2022-2023)
+    </p>
+  </center>
+  <tr>
+    <th colspan = "3" style='background-color:#d6f1ff;padding-top:.5em;padding-bottom:.5em;'>Fall</th>
+    <th style='background-color:#000000;padding-right:10px;padding-top:5px;padding-bottom:5px'></th>
+    <th colspan = "3" style='background-color:#d6f1ff;padding-top:.5em;padding-bottom:.5em;'>Winter</th>
+    <th style='background-color:#000000;padding-right:10px;padding-top:5px;padding-bottom:5px'></th>
+    <th colspan = "3" style='background-color:#d6f1ff;padding-top:.5em;padding-bottom:.5em;'>Spring</th>
+  </tr>
+  <tr>
+    <td colspan = "3" style='background-color:#d6f1ff;text-align:center'>
+      CA/RA-ship: 
+      <input type='checkbox' id='ca25(f,y23)' onclick='modcheck(this)'>
+      <label for='ca25(f,y23)'>25%</label>
+      <input type='checkbox' id='ca50(f,y23)' onclick='modcheck(this)'>
+      <label for='ca50(f,y23)'>50%</label>
+    </td>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <td colspan = "3" style='background-color:#d6f1ff;text-align:center'>
+      CA/RA-ship: 
+      <input type='checkbox' id='ca25(w,y23)' onclick='modcheck(this)'>
+      <label for='ca25(w,y23)'>25%</label>
+      <input type='checkbox' id='ca50(w,y23)' onclick='modcheck(this)'>
+      <label for='ca50(w,y23)'>50%</label>
+    </td>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <td colspan = "3" style='background-color:#d6f1ff;text-align:center'>
+      CA/RA-ship: 
+      <input type='checkbox' id='ca25(s,y23)' onclick='modcheck(this)'>
+      <label for='ca25(s,y23)'>25%</label>
+      <input type='checkbox' id='ca50(s,y23)' onclick='modcheck(this)'>
+      <label for='ca50(s,y23)'>50%</label>
+    </td>
+  </tr>
+  <tr>
+    <th style='background-color:#d6f1ff;padding:5px;width:20%'>Course</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Units</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Hrs/Wk</th>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <th style='background-color:#d6f1ff;padding:5px;width:20%'>Course</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Units</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Hrs/Wk</th>
+    <th style='background-color:#000000;padding-right:10px'></th>
+    <th style='background-color:#d6f1ff;padding:5px;width:20%'>Course</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Units</th>
+    <th style='background-color:#d6f1ff;padding:5px'>Hrs/Wk</th>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y23,1)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y23,1)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y23,1)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td rowspan = "7" style='background-color:#000000;padding-right:10px'></td>
+    <td>
+      <select id='course(w,y23,1)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y23,1)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y23,1)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td rowspan = "7" style='background-color:#000000;padding-right:10px'></td>
+    <td>
+      <select id='course(s,y23,1)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y23,1)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y23,1)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y23,2)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y23,2)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y23,2)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y23,2)' style='width:100%' padding=2px onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y23,2)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y23,2)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y23,2)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y23,2)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y23,2)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y23,3)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y23,3)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y23,3)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y23,3)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y23,3)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y23,3)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y23,3)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y23,3)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y23,3)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y23,4)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y23,4)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y23,4)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y23,4)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y23,4)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y23,4)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y23,4)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y23,4)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y23,4)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select id='course(f,y23,5)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm166'>COMM 166 - Virtual People</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs144'>CS 144 - Introduction to Computer Networking</option>
+        <option value='cs145'>CS 145 - Introduction to Databses</option>
+        <option value='cs147'>CS 147 - Introduction to Human-Computer Interaction Design</option>
+        <option value='cs148'>CS 148 - Introduction to Computer Graphics and Imaging</option>
+        <option value='cs154'>CS 154 - Introduction to the Theory of Computation</option>
+        <option value='cs157'>CS 157 - Computational Logic</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224n'>CS 224N - Natural Language Processing</option>
+        <option value='cs224v'>CS 224V - Conversational Virtual Assistants with Deep Learning</option>
+        <option value='cs224w'>CS 224W - Social and Information Networks</option>
+        <option value='cs229'>CS 229 - Machine Learning</option>
+        <option value='cs229m'>CS 229M - Machine Learning Theory</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs236'>CS 236 - Deep Generative Models</option>
+        <option value='cs237a'>CS 237A - Principles of Robot Autonomy I</option>
+        <option value='cs238'>CS 238 - Decision Making Under Uncertainty</option>
+        <option value='cs242'>CS 242 - Programming Languages</option>
+        <option value='cs244b'>CS 244B - Distributed Systems</option>
+        <option value='cs251'>CS 251 - Cryptocurrencies and blockchain technologies</option>
+        <option value='cs271'>CS 271 - Artificial Intelligence in Healthcare</option>
+        <option value='cs274'>CS 274 - Representations and Algorithms for Computational Molecular Biology</option>
+        <option value='cs279'>CS 279 - Computational Biology: Structure and Organization of Biomolecules and Cells</option>
+        <option value='cs325b'>CS 325B - Data for Sustainable Development</option>
+        <option value='cs326'>CS 326 - Topics in Advanced Robotic Manipulation</option>
+        <option value='cs330'>CS 330 - Deep Multi-task and Meta Learning</option>
+        <option value='cs336'>CS 336 - Computational Social Choice</option>
+        <option value='cs348i'>CS 348I - Computer Graphics in the Era of AI</option>
+        <option value='cs395'>CS 395 - Independent Database Project</option>
+        <option value='cs428b'>CS 428B - Probabilistic Models of Cognition: Language</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee263'>EE 263 - Introduction to Linear Dynamical Systems</option>
+        <option value='ee278'>EE 278 - Introduction to Statistical Signal Processing</option>
+        <option value='ee377'>EE 377 - Information Theory and Statistics</option>
+        <option value='engr205'>ENGR 205 - Introduction to Control Design Techniques</option>
+        <option value='msne193'>MS&E 193 - Technology and National Security: Past, Present, and Future</option>
+        <option value='msne220'>MS&E 220 - Probabilistic Analysis</option>
+        <option value='polisci150a'>POLISCI 150A - Data Science for Politics</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats202'>STATS 202 - Data Mining and Analysis</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(f,y23,5)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(f,y23,5)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(w,y23,5)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='amstud145'>AMSTUD 145 - Silicon Valley</option>
+        <option value='cme106'>CME 106 - Introduction to Probability and Statistics for Engineers (ENGR 155C)</option>
+        <option value='comm124'>COMM 124 - Truth, Trust, and Tech</option>
+        <option value='comm230a'>COMM 230A - Digital Civil Society</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs107e'>CS 107E - Computer Systems from the Ground Up</option>
+        <option value='cs140'>CS 140 - Operating Systems and Systems Programming</option>
+        <option value='cs140e'>CS 140E - Operating Systems Design and Implementation</option>
+        <option value='cs149'>CS 149 - Parallel Computing</option>
+        <option value='cs152'>CS 152 - Trust and Safety Engineering</option>
+        <option value='cs161'>CS 161 - Design and Analysis of Algorithms</option>
+        <option value='cs182'>CS 182 - Ethics, Public Policy, and Technological Change</option>
+        <option value='cs190'>CS 190 - Software Design Studio</option>
+        <option value='cs205l'>CS 205L - Continuous Mathematical Methods with an Emphasis on Machine Learning</option>
+        <option value='cs223a'>CS 223A - Introduction to Robotics</option>
+        <option value='cs228'>CS 228 - Probabilistic Graphical Models: Principles and Techniques</option>
+        <option value='cs231a'>CS 231A - Computer Vision: From 3D Reconstruction to Recognition</option>
+        <option value='cs234'>CS 234 - Reinforcement Learning</option>
+        <option value='cs237b'>CS 237B - Principles of Robot Autonomy II</option>
+        <option value='cs239'>CS 239 - Advanced Topics in Sequential Decision Making</option>
+        <option value='cs245'>CS 245 - Principles of Data-Intensive Systems</option>
+        <option value='cs246'>CS 246 - Mining Massive Data Sets</option>
+        <option value='cs248'>CS 248 - Interactive Computer Graphics</option>
+        <option value='cs254'>CS 254 - Computational Complexity</option>
+        <option value='cs255'>CS 255 - Introduction to Cryptography</option>
+        <option value='cs265'>CS 265 - Randomized Algorithms and Probabilistic Analysis (CME 309)</option>
+        <option value='cs270'>CS 270 - Modeling Biomedical Systems: Ontology, Terminology, Problem Solving</option>
+        <option value='cs275'>CS 275 - Translational Bioinformatics</option>
+        <option value='cs295'>CS 295 - Software Engineering</option>
+        <option value='cs333'>CS 333 - Algorithms for Interactive Robots</option>
+        <option value='cs348c'>CS 348C - Computer Graphics: Animation and Simulation</option>
+        <option value='cs356'>CS 356 - Topics in Computer and Network Security</option>
+        <option value='cs371'>CS 371 - Computational Biology in Four Dimensions</option>
+        <option value='cs432'>CS 432 - Computer Vision For Education and Social Science Research</option>
+        <option value='desinst240'>DESINST 240 - Designing Machine Learning: A Multidisciplinary Approach</option>
+        <option value='ee180'>EE 180 - Digital Systems Architecture</option>
+        <option value='ee276'>EE 276 - Information Theory</option>
+        <option value='ee364a'>EE 364A - Convex Optimization I</option>
+        <option value='engr248'>ENGR 248 - Principled Entrepreneurial Decisions</option>
+        <option value='msne234'>MS&E 234 - Data Privacy and Ethics</option>
+        <option value='phil251'>PHIL 251 - Metalogic</option>
+        <option value='psych209'>PSYCH 209 - Neural Network Models of Cognition: Principles and Applications</option>
+        <option value='psych215'>PSYCH 215 - Mind, Culture, and Society</option>
+        <option value='stats315a'>STATS 315A - Modern Applied Statistics: Learning</option>
+    </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(w,y23,5)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(w,y23,5)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td>
+      <select id='course(s,y23,5)' style='width:100%' onchange='modselector(this)'>
+        <option value='unknown'></option>
+        <option value='comm186w'>COMM 186W - Media, Technology and the Body</option>
+        <option value='cs103'>CS 103 - Mathematical Foundations of Computing</option>
+        <option value='cs107'>CS 107 - Computer Organization and Systems</option>
+        <option value='cs109'>CS 109 - Introduction to Probability for Computer Scientists</option>
+        <option value='cs111'>CS 111 - Operating Systems Principles</option>
+        <option value='cs143'>CS 143 - Compilers</option>
+        <option value='cs151'>CS 151 - Logic Programming</option>
+        <option value='cs155'>CS 155 - Computer and Network Security</option>
+        <option value='cs168'>CS 168 - The Modern Algorithmic Toolbox</option>
+        <option value='cs210b'>CS 210B - Software Project Experience with Corporate Partners</option>
+        <option value='cs221'>CS 221 - Artificial Intelligence: Principles and Techniques</option>
+        <option value='cs224u'>CS 224U - Natural Language Understanding</option>
+        <option value='cs225a'>CS 225A - Experimental Robotics</option>
+        <option value='cs227b'>CS 227B - General Game Playing</option>
+        <option value='cs230'>CS 230 - Deep Learning</option>
+        <option value='cs231n'>CS 231N - Deep Learning for Computer Vision</option>
+        <option value='cs233'>CS 233 - Geometric and Topological Data Analysis</option>
+        <option value='cs235'>CS 235 - Computational Methods for Biomedical Image Analysis and Interpretation</option>
+        <option value='cs243'>CS 243 - Program Analysis and Optimizations</option>
+        <option value='cs244'>CS 244 - Advanced Topics in Networking</option>
+        <option value='cs261'>CS 261 - Optimization and Algorithmic Paradigms</option>
+        <option value='cs329t'>CS 329T - Trustworthy Machine Learning</option>
+        <option value='cs348b'>CS 348B - Computer Graphics: Image Synthesis Techniques</option>
+        <option value='cs348e'>CS 348E - Character Animation: Modeling, Simulation, and Control of Human Motion</option>
+        <option value='cs348k'>CS 348K - Visual Computing Systems</option>
+        <option value='cs355'>CS 355 - Advanced Topics in Cryptography</option>
+        <option value='cs368'>CS 368 - Algorithmic Techniques for Big Data</option>
+        <option value='cs398'>CS 398 - Computational Education</option>
+        <option value='desinst215'>DESINST 215 - The Design of Data</option>
+        <option value='ee178'>EE 178 - Probabilistic Systems Analysis</option>
+        <option value='ee282'>EE 282 - Computer Systems Architecture</option>
+        <option value='ee364b'>EE 364B - Convex Optimization II</option>
+        <option value='engr209a'>ENGR 209A - Analysis and Control of Nonlinear Systems</option>
+        <option value='history244f'>HISTORY 244F - Innovations in Inclusive Design in Tech</option>
+        <option value='msne254'>MS&E 254 - The Ethical Analyst</option>
+        <option value='publpol103f'>PUBLPOL 103F - Ethics of Truth in a Post-Truth World</option>
+        <option value='stats116'>STATS 116 - Theory of Probability</option>
+        <option value='stats315b'>STATS 315B - Modern Applied Statistics: Data Mining</option>
+      </select>
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='units(s,y23,5)' style='max-width:20px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center'>
+      <input disabled='true' id='hours(s,y23,5)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+  <tr style='border-top:2px solid black'>
+    <th style='background-color:#d6f1ff;text-align:right;padding-right:10px;border-top:2px solid black'>Total</th>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalunits(f,y23)' style='max-width:30px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalhours(f,y23)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <th style='background-color:#d6f1ff;text-align:right;padding-right:10px;border-top:2px solid black'>Total</th>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalunits(w,y23)' style='max-width:30px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalhours(w,y23)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+    <th style='background-color:#d6f1ff;text-align:right;padding-right:10px;border-top:2px solid black'>Total</th>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalunits(s,y23)' style='max-width:30px;display:inline-block;text-align:center'></input> 
+    </td>
+    <td style='background-color:#d6f1ff;text-align:center;border-top:2px solid black'>
+      <input disabled='true' id='totalhours(s,y23)' style='max-width:40px;display:inline-block;text-align:center'></input> 
+    </td>
+  </tr>
+</table>
+
+<br>
+<br>
+
+<!--=======================================================================-->
+
+<textarea id='lambda' type='text/hrf' style='display:none'>
+
+</textarea>
+
+<!--=======================================================================-->
+
+<textarea id='library' type='text/hrf' style='display:none'>
+
+select(course(Q,Y,R), C) :: selected(C,Q,Y,R)
+select(course(Q,Y,R), C) :: selected(D,Q,Y,R) ==> ~selected(D,Q,Y,R) & selected(C,Q,Y,R)
+select(course(Q,Y,R), C) :: selected(C,AQ,Y,AR) ==> ~selected(C,AQ,Y,AR) & selected(C,Q,Y,R)
+value(units(Q,Y,R), U) :- selected(C,Q,Y,R) & unitcount(C, U)
+value(hours(Q,Y,R), H) :- selected(C,Q,Y,R) & hourcount(C, H)
+value(totalunits(Q,Y), E) :- quarter(Q,Y) & totalQtrUnits(Q,Y,E)
+value(totalhours(Q,Y), E) :- quarter(Q,Y) & totalQtrHours(Q,Y,E)
+select(ca25(Q,Y), true) :: ca25(Q,Y) & ~ca50(Q,Y)
+select(ca25(Q,Y), false) :: ~ca25(Q,Y)
+select(ca50(Q,Y), true) :: ca50(Q,Y) & ~ca25(Q,Y)
+select(ca50(Q,Y), false) :: ~ca50(Q,Y)
+value(ca25(Q,Y), false) :- ca50(Q,Y)
+value(ca50(Q,Y), false) :- ca25(Q,Y)
+
+totalQtrUnits(Q,Y,E) :- evaluate(setofall([U,C], selected(C,Q,Y,R) & unitcount(C,U)), T) & calculatesum(T,S) & evaluate(S,E)
+totalQtrHours(Q,Y,E) :- ca25(Q,Y) & evaluate(setofall([H,C], selected(C,Q,Y,R) & hourcount(C,H)), T) & calculatesum(T,S) & evaluate(plus(S,10),E)
+totalQtrHours(Q,Y,E) :- ca50(Q,Y) & evaluate(setofall([H,C], selected(C,Q,Y,R) & hourcount(C,H)), T) & calculatesum(T,S) & evaluate(plus(S,20),E)
+totalQtrHours(Q,Y,E) :- ~ca25(Q,Y) & ~ca50(Q,Y) & evaluate(setofall([H,C], selected(C,Q,Y,R) & hourcount(C,H)), T) & calculatesum(T,S) & evaluate(S,E)
+
+
+satisfied(logic) :- selected(cs103, Q, Y, R)
+satisfied(probability) :- probability(X) & selected(X, Q, Y, R)
+satisfied(algorithms) :- selected(cs161, Q, Y, R)
+satisfied(organizations) :- organizations(X) & selected(X, Q, Y, R)
+satisfied(principles) :- principles(X) & selected(X, Q, Y, R)
+
+satisfied(foundations) :- satisfied(logic) & satisfied(probability) & satisfied(algorithms) & satisfied(organizations) & satisfied(principles)
+satisfied(significant) :- significant(X) & selected(X, Q, Y, R)
+satisfied(theoretical) :- theoretical(X) & selected(X, Q, Y, R)
+satisfied(systems) :-  systems(X) & selected(X, Q, Y, R)
+satisfied(applications) :- applications(X) & selected(X, Q, Y, R)
+satisfied(society) :- society(X) & selected(X, Q, Y, R)
+
+satisfied(breadth) :- 
+(satisfied(theoretical) & satisfied(systems) & satisfied(applications)) | (satisfied(theoretical) & satisfied(systems) & satisfied(society)) | (satisfied(theoretical) & satisfied(applications) & satisfied(society)) | (satisfied(systems) & satisfied(applications) & satisfied(society))
+
+satisfied(depth) :- satisfied(deptha) & satisfied(depthb) & satisfied(depthc)
+satisfied(deptha) :- selected(cs221, Q, Y, R)
+satisfied(depthb) :- evaluate(min(4, countofall(X, depthb(X) & selected(X,Q,Y,R))), 4)
+satisfied(depthc) :- evaluate(setofall([U,C], selected(C,Q,Y,R) & (deptha(C) | depthb(C) | depthc(C)) & unitcount(C,U)), T) & calculatesum(T,S) & evaluate(min(S,21), 21)
+
+satisfied(allquartersnotunderenrolled) :- evaluate(countofall([Q,Y], quarter(Q,Y) & ~underenrolled(Q,Y)), A) & evaluate(countofall([Q,Y], quarter(Q,Y)), B) & evaluate(A, B)
+satisfied(allquartersnotoverenrolled) :- evaluate(countofall([Q,Y], quarter(Q,Y) & ~overenrolled(Q,Y)), A) & evaluate(countofall([Q,Y], quarter(Q,Y)), B) & evaluate(A, B)
+
+overenrolled(Q,Y) :- ~ca50(Q,Y) & quarter(Q,Y) & evaluate(setofall([U,C], selected(C,Q,Y,R) & unitcount(C,U)), T) & calculatesum(T,S) & evaluate(S,E) & evaluate(min(E,21), 21)
+overenrolled(Q,Y) :- ca50(Q,Y) & quarter(Q,Y) & evaluate(setofall([U,C], selected(C,Q,Y,R) & unitcount(C,U)), T) & calculatesum(T,S) & evaluate(S,E) & evaluate(min(E,11), 11)
+underenrolled(Q,Y) :- quarter(Q,Y) & evaluate(setofall([U,C], selected(C,Q,Y,R) & unitcount(C,U)), T) & calculatesum(T,S) & evaluate(S,E) & evaluate(max(E,7), 7)
+
+foundations(X) :- logic(X) | probability(X) | algorithms(X) | organizations(X) | principles(X)
+notfoundationsunits(NFE) :- evaluate(setofall([U,C], selected(C,Q,Y,R) & ~foundations(C) & unitcount(C,U)), NF) & calculatesum(NF, NFS) & evaluate(NFS, NFE)
+foundationsunits(M) :- evaluate(setofall([U,C], selected(C,Q,Y,R) & foundations(C) & unitcount(C,U)), F) & calculatesum(F, FS) & evaluate(FS, FE) & evaluate(min(FE, 10), M)
+satisfied(graduation) :- notfoundationsunits(NFE) & foundationsunits(M) & evaluate(min(plus(NFE, M), 45), 45)
+
+mainsatisfied(unitreqs) :- satisfied(allquartersnotunderenrolled) & satisfied(allquartersnotoverenrolled) & satisfied(graduation)
+mainsatisfied(foundationreqs) :- satisfied(foundations)
+mainsatisfied(significantreqs) :- satisfied(significant)
+mainsatisfied(breadthreqs) :- satisfied(breadth)
+mainsatisfied(depthreqs) :- satisfied(depth)
+
+
+requirement(allquartersnotunderenrolled)
+requirement(allquartersnotoverenrolled)
+requirement(graduation)
+requirement(logic)
+requirement(probability)
+requirement(algorithms)
+requirement(organizations)
+requirement(principles)
+requirement(significant)
+requirement(breadth)
+requirement(theoretical)
+requirement(systems)
+requirement(applications)
+requirement(society)
+requirement(deptha)
+requirement(depthb)
+requirement(depthc)
+
+mainrequirement(unitreqs)
+mainrequirement(foundationreqs)
+mainrequirement(significantreqs)
+mainrequirement(breadthreqs)
+mainrequirement(depthreqs)
+
+style(R,color,black) :- requirement(R) & ~satisfied(R)
+style(R,color,gainsboro) :- satisfied(R)
+
+style(R,color,red) :- mainrequirement(R) & ~mainsatisfied(R)
+style(R,color,green) :- mainsatisfied(R)
+
+calculatesum(X!Y, plus(E,S)) :- extract(X,E) & calculatesum(Y,S)
+calculatesum(nil,0)
+extract(X!Y, X)
+
+
+
+
+logic(cs103)
+probability(cs109)
+probability(stats116)
+probability(cme106)
+probability(msne220)
+probability(ee178)
+algorithms(cs161)
+organizations(cs107)
+organizations(cs107e)
+principles(cs110)
+principles(cs111)
+
+significant(cs140)
+significant(cs140e)
+significant(cs143)
+significant(cs144)
+significant(cs145)
+significant(cs148)
+significant(cs151)
+significant(cs190)
+significant(cs210b)
+significant(cs221)
+significant(cs227b)
+significant(cs231n)
+significant(cs243)
+significant(cs248)
+
+theoretical(cs154)
+theoretical(cs157)
+theoretical(cs168)
+theoretical(cs254)
+theoretical(cs258)
+theoretical(cs261)
+theoretical(cs265)
+theoretical(cs334a)
+theoretical(ee364a)
+theoretical(ee364b)
+theoretical(phil251)
+
+systems(cs140)
+systems(cs140e)
+systems(cs143)
+systems(cs144)
+systems(cs149)
+systems(cs242)
+systems(cs243)
+systems(cs244)
+systems(cs244b)
+systems(cs295)
+systems(ee180)
+systems(ee282)
+systems(ee382e)
+
+applications(cs145)
+applications(cs147)
+applications(cs148)
+applications(cs155)
+applications(cs221)
+applications(cs223a)
+applications(cs224n)
+applications(cs224u)
+applications(cs224w)
+applications(cs227b)
+applications(cs228)
+applications(cs229)
+applications(cs229m)
+applications(cs231a)
+applications(cs231n)
+applications(cs234)
+applications(cs236)
+applications(cs237a)
+applications(cs245)
+applications(cs246)
+applications(cs248)
+applications(cs251)
+applications(cs255)
+applications(cs262)
+applications(cs279)
+applications(cs346)
+applications(cs348b)
+applications(cs348c)
+applications(cs348e)
+applications(cs348i)
+applications(cs348k)
+applications(cs355)
+applications(cs356)
+
+society(cs152)
+society(cs182)
+society(amstud145)
+society(anthro132d)
+society(comm124)
+society(comm166)
+society(comm186w)
+society(comm230a)
+society(desinst215)
+society(desinst240)
+society(engr248)
+society(history244f)
+society(msne193)
+society(msne234)
+society(msne254)
+society(polisci150a)
+society(psych215)
+society(publpol103f)
+
+deptha(cs221)
+
+depthb(cs223a)
+depthb(cs224n)
+depthb(cs224u)
+depthb(cs224w)
+depthb(cs228)
+depthb(cs229)
+depthb(cs231a)
+depthb(cs231n)
+depthb(cs234)
+depthb(cs237a)
+depthb(cs237b)
+depthb(cs238)
+
+depthc(cs205l)
+depthc(cs224v)
+depthc(cs225a)
+depthc(cs227b)
+depthc(cs229m)
+depthc(cs230)
+depthc(cs233)
+depthc(cs235)
+depthc(cs236)
+depthc(cs239)
+depthc(cs246) 
+depthc(cs270)
+depthc(cs271)
+depthc(cs274)
+depthc(cs275)
+depthc(cs279)
+depthc(cs325b)
+depthc(cs326)
+depthc(cs330)
+depthc(cs333)
+depthc(cs334a)
+depthc(cs336)
+depthc(cs368)
+depthc(cs371)
+depthc(cs377e)
+depthc(cs377g)
+depthc(cs377n)
+depthc(cs377q)
+depthc(cs377t)
+depthc(cs377u)
+depthc(cs395)
+depthc(cs398)
+depthc(cs432)
+depthc(ee263)
+depthc(ee276)
+depthc(ee278)
+depthc(ee364a)
+depthc(ee364b)
+depthc(ee377)
+depthc(engr205)
+depthc(engr209a)
+depthc(msne252)
+depthc(msne352)
+depthc(msne353)
+depthc(psych209)
+depthc(stats202)
+depthc(stats315a)
+depthc(stats315b)
+
+quarter(f, y22)
+quarter(w, y22)
+quarter(s, y22)
+quarter(f, y23)
+quarter(w, y23)
+quarter(s, y23)
+
+unitcount(msne220,4)
+unitcount(cs144,4)
+unitcount(cs145,4)
+unitcount(cs148,4)
+unitcount(cs154,4)
+unitcount(cs157,3)
+unitcount(cs242,3)
+unitcount(cs244b,3)
+unitcount(cs147,4)
+unitcount(cs224n,4)
+unitcount(cs224w,4)
+unitcount(cs229,4)
+unitcount(cs229m,3)
+unitcount(cs236,3)
+unitcount(cs237a,4)
+unitcount(cs251,3)
+unitcount(cs279,3)
+unitcount(cs348i,4)
+unitcount(comm166,5)
+unitcount(msne193,3)
+unitcount(polisci150a,5)
+unitcount(cs238,4)
+unitcount(cs224v,4)
+unitcount(cs271,4)
+unitcount(cs274,4)
+unitcount(cs325b,5)
+unitcount(cs326,4)
+unitcount(cs330,3)
+unitcount(cs336,3)
+unitcount(cs395,6)
+unitcount(cs428b,3)
+unitcount(ee263,3)
+unitcount(ee278,3)
+unitcount(ee377,3)
+unitcount(engr205,3)
+unitcount(stats202,3)
+unitcount(cs109,5)
+unitcount(stats116,5)
+unitcount(ee178,4)
+unitcount(cs221,4)
+unitcount(cs230,4)
+unitcount(cs161,5)
+unitcount(cs107e,5)
+unitcount(cs107,5)
+unitcount(cs103,5)
+unitcount(cme106,4)
+unitcount(cs140,5)
+unitcount(cs140e,4)
+unitcount(cs190,4)
+unitcount(cs248,4)
+unitcount(cs254,3)
+unitcount(cs265,3)
+unitcount(ee364a,3)
+unitcount(phil251,4)
+unitcount(cs149,4)
+unitcount(cs295,3)
+unitcount(ee180,4)
+unitcount(cs223a,3)
+unitcount(cs228,4)
+unitcount(cs231a,4)
+unitcount(cs234,3)
+unitcount(cs245,4)
+unitcount(cs246,4)
+unitcount(cs255,3)
+unitcount(cs348c,3)
+unitcount(cs356,3)
+unitcount(amstud145,5)
+unitcount(comm124,5)
+unitcount(comm230a,3)
+unitcount(cs152,3)
+unitcount(cs182,5)
+unitcount(desinst240,3)
+unitcount(engr248,3)
+unitcount(msne234,3)
+unitcount(psych215,3)
+unitcount(cs237b,4)
+unitcount(cs205l,3)
+unitcount(cs239,4)
+unitcount(cs270,3)
+unitcount(cs275,4)
+unitcount(cs333,4)
+unitcount(cs371,3)
+unitcount(cs432,3)
+unitcount(ee276,3)
+unitcount(psych209,4)
+unitcount(stats315a,3)
+unitcount(cs111,5)
+unitcount(cs143,4)
+unitcount(cs151,3)
+unitcount(cs210b,4)
+unitcount(cs227b,3)
+unitcount(cs231n,4)
+unitcount(cs243,4)
+unitcount(cs168,4)
+unitcount(cs261,3)
+unitcount(ee364b,3)
+unitcount(cs244,4)
+unitcount(ee282,3)
+unitcount(cs155,3)
+unitcount(cs224u,4)
+unitcount(cs348b,4)
+unitcount(cs348e,3)
+unitcount(cs348k,4)
+unitcount(cs355,3)
+unitcount(comm186w,5)
+unitcount(cs329t,3)
+unitcount(desinst215,4)
+unitcount(history244f,5)
+unitcount(msne254,3)
+unitcount(publpol103f,3)
+unitcount(cs225a,3)
+unitcount(cs233,3)
+unitcount(cs235,4)
+unitcount(cs368,3)
+unitcount(cs398,4)
+unitcount(engr209a,3)
+unitcount(stats315b,3)
+
+hourcount(msne220,12.5)
+hourcount(cs144,17.5)
+hourcount(cs145,12.5)
+hourcount(cs148,7.5)
+hourcount(cs154,12.5)
+hourcount(cs157,7.5)
+hourcount(cs242,12.5)
+hourcount(cs244b,7.5)
+hourcount(cs147,17.5)
+hourcount(cs224n,17.5)
+hourcount(cs224w,12.5)
+hourcount(cs229,22.5)
+hourcount(cs229m,12.5)
+hourcount(cs236,12.5)
+hourcount(cs237a,17.5)
+hourcount(cs251,12.5)
+hourcount(cs279,7.5)
+hourcount(cs348i,12.5)
+hourcount(comm166,7.5)
+hourcount(msne193,7.5)
+hourcount(polisci150a,10)
+hourcount(cs238,12.5)
+hourcount(cs224v,12.5)
+hourcount(cs271,12.5)
+hourcount(cs274,12.5)
+hourcount(cs325b,17.5)
+hourcount(cs326,7.5)
+hourcount(cs330,12.5)
+hourcount(cs336,15)
+hourcount(cs395,7.5)
+hourcount(cs428b,7.5)
+hourcount(ee263,17.5)
+hourcount(ee278,17.5)
+hourcount(ee377,12.5)
+hourcount(engr205,12.5)
+hourcount(stats202,12.5)
+hourcount(cs109,17.5)
+hourcount(stats116,12.5)
+hourcount(ee178,12.5)
+hourcount(cs221,17.5)
+hourcount(cs230,12.5)
+hourcount(cs161,12.5)
+hourcount(cs107e,22.5)
+hourcount(cs107,22.5)
+hourcount(cs103,17.5)
+hourcount(cme106,12.5)
+hourcount(cs140,32.5)
+hourcount(cs140e,17.5)
+hourcount(cs190,22.5)
+hourcount(cs248,12.5)
+hourcount(cs254,7.5)
+hourcount(cs265,12.5)
+hourcount(ee364a,17.5)
+hourcount(phil251,12.5)
+hourcount(cs149,17.5)
+hourcount(cs295,10)
+hourcount(ee180,17.5)
+hourcount(cs223a,12.5)
+hourcount(cs228,17.5)
+hourcount(cs231a,17.5)
+hourcount(cs234,12.5)
+hourcount(cs245,7.5)
+hourcount(cs246,17.5)
+hourcount(cs255,12.5)
+hourcount(cs348c,12.5)
+hourcount(cs356,12.5)
+hourcount(amstud145,7.5)
+hourcount(comm124,7.5)
+hourcount(comm230a,7.5)
+hourcount(cs152,7.5)
+hourcount(cs182,12.5)
+hourcount(desinst240,7.5)
+hourcount(engr248,7.5)
+hourcount(msne234,7.5)
+hourcount(psych215,7.5)
+hourcount(cs237b,22.5)
+hourcount(cs205l,12.5)
+hourcount(cs239,10)
+hourcount(cs270,7.5)
+hourcount(cs275,7.5)
+hourcount(cs333,7.5)
+hourcount(cs371,7.5)
+hourcount(cs432,7.5)
+hourcount(ee276,12.5)
+hourcount(psych209,12.5)
+hourcount(stats315a,12.5)
+hourcount(cs111,17.5)
+hourcount(cs143,22.5)
+hourcount(cs151,7.5)
+hourcount(cs210b,12.5)
+hourcount(cs227b,7.5)
+hourcount(cs231n,17.5)
+hourcount(cs243,12.5)
+hourcount(cs168,12.5)
+hourcount(cs261,15)
+hourcount(ee364b,12.5)
+hourcount(cs244,12.5)
+hourcount(ee282,12.5)
+hourcount(cs155,12.5)
+hourcount(cs224u,7.5)
+hourcount(cs348b,12.5)
+hourcount(cs348e,10)
+hourcount(cs348k,12.5)
+hourcount(cs355,17.5)
+hourcount(comm186w,7.5)
+hourcount(cs329t,17.5)
+hourcount(desinst215,12.5)
+hourcount(history244f,7.5)
+hourcount(msne254,7.5)
+hourcount(publpol103f,7.5)
+hourcount(cs225a,12.5)
+hourcount(cs233,12.5)
+hourcount(cs235,12.5)
+hourcount(cs368,12.5)
+hourcount(cs398,7.5)
+hourcount(engr209a,12.5)
+hourcount(stats315b,7.5)
+
+
+</textarea>
+
+<!--=======================================================================-->
+
+  </center>
+</body>
+
+<footer>
+    <center> 
+      <p style="background-color:#d6f1ff; border: 3px; border-style: solid; border-color: black; padding-bottom: 1em; color:black;font-size:18px;padding-top: 1em;font-weight: bold;">Requirements</p>   
+    </center>
+    <div style="color: black; border:3px; border-style:solid; border-color: black; padding: 1em; font-size: 16.5px; font-weight: normal;background-color:white">
+      <b id='unitreqs'> Unit Requirements</b>
+      <div id='allquartersnotunderenrolled'> You must take at least 8 units per quarter. </div>
+      <div id='allquartersnotoverenrolled' style='color:gainsboro;'>You cannot take over 20 units (10 units if 50% CA/RA ship) per quarter.  </div>
+      <div id='graduation'>You must take at least 45 units in total to graduate. </div>
+      <br>
+      <b id='foundationreqs'> Foundation Requirements</b>
+      <div id='logic'>You must take CS 103. </div>
+      <div id='probability'>You must take one of the following: CS 109, STATS 116, CME 106, EE 178, MS&E 220. </div>
+      <div id='algorithms'>You must take CS 161. </div>
+      <div id='organizations'>You must take CS 107 or CS 107E. </div>
+      <div id='principles'>You must take CS 111. </div>
+      <br>
+      <b id='significantreqs'> Significant Implementation Requirement</b>
+      <div id='significant'>You must take at least one of the following: CS 140, CS 140E, CS 143, CS 144, CS 145, CS 148, CS 151, CS 190, CS 210B, CS 221, CS 227B, CS 231N, CS 243, CS 248. </div>
+      <br>
+      <b id='breadthreqs'> Breadth Requirements</b>
+      <div id='breadth'>You must take at least three courses from different breadth area: </div>
+          <div id='theoretical' style='text-indent:25px'>A. Mathematical and Theoretical Foundations: CS 154, CS 157, CS 168, CS 254, CS 261, CS 265, EE 364A, EE 364B, PHIL 251 </div>
+          <div id='systems' style='text-indent:25px'>B. Computer Systems: CS 140, CS 140E, CS 143, CS 144, CS 149, CS 242, CS 243, CS 244, CS 244B, CS 295, EE 180, EE 282 </div>
+          <div id='applications' style='text-indent:25px'>C. Applications: CS 145, CS 147, CS 148, CS 155, CS 221, CS 223A, CS 224N, CS 224U, CS 224W, CS 227B, CS 228, CS 229, CS 229M, CS 231A, CS 231N, CS 234, CS 236, CS 245, CS 246, CS 248, CS 251, CS 255, CS 262, CS 279, CS 345, CS 346, CS 348B, CS 348C, CS 348E, CS 348I, CS 348K, CS 355, CS 356 </div>
+          <div id='society' style='text-indent:25px'>D. Computing and Society: CS 152, CS 182, AMSTUD 145, ANTHRO 132D, COMM 124, COMM 166, COMM 186W, COMM 230A, DESINST 215, DESINST 240, ENGR 131, ENGR 248, HISTORY 244F, MS&E 193, MS&E 234, MS&E 254, POLISCI 150A, PSYCH 215, PUBLPOL 103F </div>
+      <br>
+      <b id='depthreqs'> Depth Requirements</b>
+      <div id='deptha'>You must take CS 221. </div>
+      <div id='depthb'>You must take at least four of CS 223A, CS 224N, CS 224U, CS 224W, CS 228, CS 229, CS 231A, CS 231N, CS 234, CS 238 </div>
+      <div id='depthc'>You must take a total of at least 21 units from (a), (b) and the following: CS 205L, CS 224V, CS 225A, CS 227B, CS 229M, CS 230, CS 233, CS 235, CS 236, CS 239, CS 246, CS 270, CS 271, CS 274, CS 275, CS 279, CS 325B, CS 326, CS 330, CS 333, EE 364A, CS 336, CS 368, CS 371, CS 395, CS 398, CS 428B, CS 432, EE 263, EE 276, EE 278, EE 364A, EE 364B, ENGR 205, ENGR 209A, MS&E 251, MS&E 252, MS&E 352, MS&E 353, PSYCH 209, STATS 202, STATS 315A, STATS 315B </div>
+    </div>
+</footer>
+
+<!--=======================================================================-->
+
+</html>
